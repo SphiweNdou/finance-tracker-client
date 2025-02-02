@@ -1,1 +1,6 @@
-<p>accounts works!</p>
+<h2>Accounts</h2>
+<ul>
+    <li *ngFor = "let account of accounts">
+        {{account.name}} - Balance: {{account.balance | currency}}
+    </li>
+</ul>
