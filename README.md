@@ -1,59 +1,67 @@
-# FinanceTrackerClient
+# Personal Finance Tracker – Angular Client
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+This is the front-end client for the Personal Finance Tracker application, built with Angular. It connects to the backend API (ASP.NET Core) and allows users to manage their personal finances through an intuitive interface.
 
-## Development server
+## 🌟 Features
 
-To start a local development server, run:
+- 📄 **View & Manage Transactions**
+- 🧾 **Account Overview & Balances**
+- 🌐 **API Integration** with ASP.NET Core backend
+- 🎨 **Responsive UI** using Angular components and SCSS
+- 🧱 **Modular Design** with reusable components and services
 
+## 🧰 Tech Stack
+
+- **Framework:** Angular 15+
+- **Styling:** SCSS
+- **API Communication:** HttpClient
+- **Project Structure:** Components for `accounts` and `transactions`
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/SphiweNdou/finance-tracker-client.git
+cd finance-tracker-client
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Run the Application
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then navigate to `http://localhost:4200` in your browser.
 
-## Code scaffolding
+## 🧩 Backend & Database Setup
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+This project requires the .NET Core API backend which you can find [here](https://github.com/SphiweNdou/personal-finance-tracker).  
+Make sure to:
 
-```bash
-ng generate component component-name
-```
+- Run the backend API
+- Ensure the database (e.g., SQL Server or SQLite) is seeded and ready
+- Update API base URLs in Angular services (`src/app/services/`) if needed
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+> Database is managed through Entity Framework Core in the backend. This frontend consumes data via REST endpoints.
 
-```bash
-ng generate --help
-```
+## 🖼️ User Interface Overview
 
-## Building
+- `/accounts` – Page to view account balances and details
+- `/transactions` – Page to record income and expense transactions
 
-To build the project run:
+Each page uses Angular components that communicate with backend services to fetch and persist data.
 
-```bash
-ng build
-```
+## 👨‍💻 Author
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+**Sphiwe Ndou**  
+Frontend Developer | Full-Stack .NET & Angular Enthusiast  
+GitHub: [@SphiweNdou](https://github.com/SphiweNdou)  
+LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/ndivhuho-ndou-39246515a)
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is open for contributions, suggestions, and improvements!
